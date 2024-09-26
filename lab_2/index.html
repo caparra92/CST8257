@@ -1,0 +1,80 @@
+<!--
+Author: Camilo Andrés Parra
+Student Number: 041117912
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Deposit Calculator</title>
+</head>
+<body>
+    <header>
+        <h2>Deposit Calculator</h2>
+    </header>
+    <main class="u-wrapper">
+        <section class="u-container">
+            <form action="/depositCalculator.php" method="post" class="u-form">
+                <div class="u-input">
+                    <label for="principalAmount">Principal Amount</label>
+                    <input type="text" name="principalAmount" id="principalAmount">
+                </div>
+                <div class="u-input">
+                    <label for="yearsToDeposit">Years to Deposit</label>
+                    
+                        <select name="yearsToDeposit" id="yearsToDeposit">
+                            <option value="">Select one...</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                    
+                </div>
+                <hr>
+                <div class="u-input">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name">
+                </div>
+                <div class="u-input">
+                    <label for="postalCode">Postal Code</label>
+                    <input type="text" name="postalCode" id="postalCode">
+                </div>
+                <div class="u-input">
+                    <label for="phoneNumber">Phone Number</label>
+                    <input type="text" name="phoneNumber" id="phoneNumber">
+                </div>
+                <div class="u-input">
+                    <label for="emailAddress">Email Address</label>
+                    <input type="text" name="emailAddress" id="emailAddress">
+                </div>
+                <hr>
+                <div class="u-input u-input-radio">
+                    
+                    <span>Preferred Contact Method</span>
+                    <div>
+                        <label for="contactMethodPhone">Phone</label>
+                        <input type="radio" name="contactMethod" id="contactMethodPhone" value="phone">
+                        <label for="contactMethodEmail">Email</label>
+                        <input type="radio" name="contactMethod" id="contactMethodEmail" value="email">
+                    </div>
+                </div>
+                <div id="hourlyContact" class="u-container"></div>
+                <div class="u-btn-group">
+                    <button type="submit" class="u-btn" name="calculate">Calculate</button>
+                    <button id="btnClear" class="u-btn" type="button">Clear</button>
+                </div>           
+            </form>
+        </section>
+    </main>
+<script src="js/script.js"></script>
+</body>
+</html>

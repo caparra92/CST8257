@@ -1,0 +1,147 @@
+/**
+* Author: Camilo Andrés Parra
+* Student number: 041117912
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  line-height: 1.5;
+  box-sizing: border-box;
+}
+
+header, footer {
+  padding: 2rem;
+  text-align: center;
+}
+
+main {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+hr {
+    color: #00a6ff;
+}
+
+h1 {
+  text-align: center;
+}
+
+a, a:link, a:hover, a:visited {
+  color:dodgerblue;
+  text-decoration: none;
+}
+
+.u-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.u-form {
+    display: flex;
+    flex-direction: column;
+    gap: .4rem;
+}
+
+.u-input {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+}
+
+.u-input-chk {
+    display: flex;
+    gap: 1rem;
+    justify-content: start;
+}
+
+.u-input input, select {
+    border: 1px solid #bbb;
+    padding: 5px;
+    border-radius: 3px;
+    outline: none;
+    width: 100%; 
+    box-sizing: border-box; 
+}
+
+.u-input label {
+    width: 170px; 
+}
+
+.u-input-radio label {
+    width: auto; 
+}
+
+.u-input-radio div {
+    display: flex; 
+    gap: 1rem;
+}
+
+.u-input input[type='radio'] {
+    cursor: pointer;
+}
+
+.u-btn-group {
+    padding: 1rem 0;
+    display: flex;
+    gap: 1rem;
+}
+
+.u-btn {
+    padding: .5rem;
+    color: #e2dfdf;
+    background-color: #00a6ff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all .2s ease-in;
+}
+
+.u-btn:hover {
+    background-color: #0580c3;
+}
+
+.u-table {
+    border: 1px solid #ccc;
+
+}
+
+th {
+    background-color: #d4d3d3;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+tr:hover {
+    background-color: #c3e2f3;
+    cursor: pointer;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+@media screen and (max-width: 600px) {
+    .u-input {
+       flex-direction: column;
+    }
+
+    .u-form {
+        width: 100%;
+        padding: 0 1rem;
+    }
+
+    .u-input-radio input {
+        width: auto;
+    }
+  }
